@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -8,11 +9,10 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         DREAM IN <span className="text-primary">CREATIVE</span> WAY
                     </h1>
-                    <p className="text-xl text-gray-600 mb-6">
-                        We are here to help you build your dream project
-                    </p>
-                    <button className="btn-primary mr-4">Get Started</button>
-                    <button className="btn-secondary">Learn More</button>
+                    <p className="text-xl mb-8">Leading global trade and logistics solutions</p>
+                    <Link href="#about" className="bg-primary text-white px-6 py-3 text-lg font-semibold hover:bg-orange-600 transition duration-300">
+                        Learn More
+                    </Link>
                 </div>
                 <div className="md:w-1/2 animate-slideInRight">
                     <Image

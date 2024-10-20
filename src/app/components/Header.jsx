@@ -3,15 +3,16 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <header className="bg-white shadow-md fixed w-full z-10">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div className="container mx-auto px-4 py-1 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold text-primary">
-                    Maxinet
+                    <Image src="/carbon_holdings_logo.png" height={50} width={180} alt='logo' />
                 </Link>
                 <nav className="hidden md:flex space-x-6">
                     <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
