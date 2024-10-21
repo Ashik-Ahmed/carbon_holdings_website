@@ -1,29 +1,35 @@
 
-import { Lightbulb, Palette, Rocket, Globe } from 'lucide-react';
+import { Globe, TrendingUp, Ship, Package, ShieldCheck } from 'lucide-react';
 import { Card, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 const services = [
     {
-        title: 'Creative Design',
-        description: 'Innovative designs that capture attention and convey your message effectively.',
-        icon: Palette,
+        title: 'Trading & Indenting',
+        description: 'Facilitating seamless trading operations with expertise in domestic and international markets.',
+        icon: TrendingUp,
     },
     {
-        title: 'Digital Marketing',
-        description: 'Comprehensive digital marketing strategies to boost your online presence.',
+        title: 'Shipping & Logistics',
+        description: 'Comprehensive logistics solutions to ensure efficient and safe transportation of goods.',
+        icon: Ship,
+    },
+    {
+        title: 'Import & Export',
+        description: 'Connecting businesses to global markets by managing the complexities of cross-border trade.',
         icon: Globe,
     },
     {
-        title: 'Brand Strategy',
-        description: 'Develop a strong brand identity that resonates with your target audience.',
-        icon: Lightbulb,
+        title: 'Supply Chain Management',
+        description: 'Optimizing the flow of goods and information to enhance efficiency and reduce costs.',
+        icon: Package,
     },
     {
-        title: 'Product Launch',
-        description: 'Successfully launch your products with our expert guidance and support.',
-        icon: Rocket,
+        title: 'Fender Service',
+        description: 'Providing specialized fendering solutions to ensure the safety and security of vessels.',
+        icon: ShieldCheck,
     },
 ];
+
 
 const Services = () => {
     return (
