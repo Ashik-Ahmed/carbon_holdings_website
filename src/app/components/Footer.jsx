@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap justify-between">
                     <div className="w-full md:w-1/4 mb-6 md:mb-0">
-                        <h3 className="text-xl font-bold mb-2">CorporateBiz</h3>
+                        <h3 className="text-xl font-bold mb-2">Carbon Holdings</h3>
                         <p className="text-gray-400">Your trusted partner in business solutions</p>
                     </div>
                     <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -23,7 +23,7 @@ const Footer = () => {
                         <p className="text-gray-400">123 Business Street</p>
                         <p className="text-gray-400">City, State 12345</p>
                         <p className="text-gray-400">Phone: (123) 456-7890</p>
-                        <p className="text-gray-400">Email: info@corporatebiz.com</p>
+                        <p className="text-gray-400">Email: info@Carbon Holdings.com</p>
                     </div>
                     <div className="w-full md:w-1/4">
                         <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-                    <p className="text-gray-400">&copy; 2023 CorporateBiz. All rights reserved.</p>
+                    <p className="text-gray-400">&copy; {new Date().getFullYear()} Carbon Holdings. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -16,26 +16,30 @@ const About = () => {
                         />
                     </div>
                     <div className="md:w-1/2 md:pl-12 animate-slideInRight">
-                        <h2 className="section-title">WE ARE THE BEST <span className="text-primary">CREATIVE COMPANY</span> EVER</h2>
+                        <h2 className="section-title">YOUR <span className="text-primary">TRUSTED</span> PARTNER IN <span className="text-primary">TRADE</span> AND <span className="text-primary">LOGISTICS</span></h2>
                         <p className="text-gray-600 mb-6">
-                            We are a team of passionate individuals dedicated to bringing your creative visions to life. With years of experience and a commitment to excellence, we strive to deliver outstanding results for every project.
+                            At Carbon Holdings, we are dedicated to connecting businesses globally with innovative and reliable solutions. Backed by over 15 years of industry expertise, we deliver comprehensive services in trading, logistics, and supply chain management, ensuring efficiency, safety, and sustainability in every project.
                         </p>
                         <ul className="space-y-2 mb-6">
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
-                                <span>Innovative and creative solutions</span>
+                                <span>Comprehensive Trade Solutions</span>
                             </li>
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
-                                <span>Dedicated team of professionals</span>
+                                <span>Experienced and Reliable</span>
                             </li>
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
-                                <span>On-time project delivery</span>
+                                <span>Innovative and Efficient</span>
                             </li>
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
-                                <span>Customer satisfaction guaranteed</span>
+                                <span>Global Reach, Local Impact</span>
+                            </li>
+                            <li className="flex items-center">
+                                <CheckCircle className="text-primary mr-2" />
+                                <span>Commitment to Safety and Sustainability</span>
                             </li>
                         </ul>
                         <button className="btn-primary">Learn More</button>
