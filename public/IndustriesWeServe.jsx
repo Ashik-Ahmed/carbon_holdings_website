@@ -30,7 +30,7 @@ const industries = [
 
 const IndustriesWeServe = () => {
     return (
-        <section id='#industriesweserve' className="py-16 bg-gray-100">
+        <section id='#industriesweserve' className="py-16">
             <div className="container mx-auto px-4">
                 <h2 className="section-title text-center"><span className="text-primary">INDUSTRIES</span> WE SERVE</h2>
                 <p className="section-subtitle text-center">
@@ -40,9 +40,12 @@ const IndustriesWeServe = () => {
                     {industries.map((industry, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-lg shadow-md p-6 text-left hover:shadow-xl transform transition-all duration-300"
+                            className="group bg-white rounded-lg shadow-md p-6 text-left hover:shadow-xl transform transition-all duration-300"
                         >
-                            <div className="text-4xl text-blue-500 mb-4">{industry.icon}</div>
+                            <div className="w-12 h-12 bg-primary group-hover:bg-[#1e3056] fade-in-10 transition-all duration-300 rounded-full flex items-center justify-center mb-4">
+                                <span className='text-white'>{industry.icon}</span>
+                            </div>
+                            {/* <div className="text-4xl text-primary mb-4">{industry.icon}</div> */}
                             <h3 className="text-xl font-bold mb-2">{industry.title}</h3>
                             <p className="text-gray-600">{industry.description}</p>
                         </div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function OurShip() {
     return (
-        <section id="ship" className="py-16 bg-gray-100">
+        <section id="ship" className="py-16">
             <div className="container mx-auto px-4">
                 <h2 className="section-title text-center">OUR <span className='text-primary'>SHIP</span></h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
