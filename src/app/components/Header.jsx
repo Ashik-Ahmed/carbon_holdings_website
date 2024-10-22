@@ -19,9 +19,7 @@ const Header = () => {
                     <Link href="#about" className="text-gray-600 hover:text-primary">About</Link>
                     <Link href="#services" className="text-gray-600 hover:text-primary">Services</Link>
                     <Link href="#ship" className="text-gray-600 hover:text-primary">Ship</Link>
-                    <Link href="#pricing" className="text-gray-600 hover:text-primary">Pricing</Link>
-                    <Link href="#blog" className="text-gray-600 hover:text-primary">Blog</Link>
-                    <Link href="#contact" className="text-gray-600 hover:text-primary">Contact</Link>
+                    <Link href="#mission" className="text-gray-600 hover:text-primary">Mission & Vision</Link>
                 </nav>
                 <button className="btn-primary hidden md:block">Get Started</button>
                 <button
@@ -34,14 +32,12 @@ const Header = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-white">
                     <nav className="flex flex-col space-y-4 px-4 py-6">
-                        <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
-                        <Link href="#about" className="text-gray-600 hover:text-primary">About</Link>
-                        <Link href="#services" className="text-gray-600 hover:text-primary">Services</Link>
-                        <Link href="#team" className="text-gray-600 hover:text-primary">Team</Link>
-                        <Link href="#pricing" className="text-gray-600 hover:text-primary">Pricing</Link>
-                        <Link href="#blog" className="text-gray-600 hover:text-primary">Blog</Link>
-                        <Link href="#contact" className="text-gray-600 hover:text-primary">Contact</Link>
-                        <button className="btn-primary w-full">Get Started</button>
+                        <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Home</Link>
+                        <Link href="#about" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">About</Link>
+                        <Link href="#services" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Services</Link>
+                        <Link href="#ship" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Ship</Link>
+                        <Link href="#mission" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Mission & Vision</Link>
+                        <button onClick={() => setIsMenuOpen(false)} className="btn-primary w-full">Get Started</button>
                     </nav>
                 </div>
             )}

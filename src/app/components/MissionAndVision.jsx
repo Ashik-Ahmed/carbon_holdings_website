@@ -2,11 +2,11 @@ import { Target, Eye } from 'lucide-react';
 
 const MissionAndVision = () => {
     return (
-        <section className="py-16 bg-white text-center">
+        <section id='mission' className="py-16 bg-white text-center">
             <div className="container mx-auto px-4">
                 <div className="mb-12">
                     <h2 className="section-title text-center">Our Mission & Vision</h2>
-                    <p className="text-lg text-gray-600">
+                    <p className="section-subtitle text-center">
                         At Carbon Holdings, we are driven by a clear mission and vision that guide our efforts in the global trade and logistics landscape.
                     </p>
                 </div>
