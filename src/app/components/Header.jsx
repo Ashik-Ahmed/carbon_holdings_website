@@ -9,10 +9,10 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white shadow-md fixed w-full z-10">
-            <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+        <header className="bg-white fixed w-full z-10">
+            <div className="container mx-auto px-4 py-2 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold text-primary">
-                    <Image src="/logo.png" height={50} width={180} alt='logo' />
+                    <img src="/logo.png" alt='logo' className='w-[180px] h-[22px]' />
                 </Link>
                 <nav className="hidden md:flex space-x-6">
                     <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
