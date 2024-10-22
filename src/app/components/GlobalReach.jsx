@@ -6,10 +6,10 @@ const GlobalReach = () => {
     return (
         <section id="ship" className="py-16 bg-gray-100">
             <div className="container mx-auto px-4">
+                <h2 className='section-title text-center uppercase'>Connecting <span className="text-primary">Businesses Worldwide</span></h2>
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pl-12 animate-slideInLeft">
-                        <h2 className="section-title text-center"><span className="text-primary">GLOBAL</span> REACH</h2>
-                        <h4>Connecting Businesses Worldwide – Bridging Markets and Opportunities</h4>
+                        {/* <h2 className="section-title text-center"> REACH</h2> */}
                         <p className='text-gray-600'>At Carbon Holdings, our operations extend beyond borders, enabling us to connect businesses to global markets and foster international partnerships. Through our robust import and export services, we facilitate the movement of goods across continents, helping clients tap into new opportunities and achieve their growth goals.</p>
 
                         <ul className="space-y-2 my-6 text-gray-600">

@@ -11,6 +11,7 @@ import Services from './components/Services';
 import OurShip from './components/OurShip';
 import GlobalReach from './components/GlobalReach';
 import IndustriesWeServe from '../../public/IndustriesWeServe';
+import MissionAndVision from './components/MissionAndVision';
 
 
 export default function Home() {
@@ -23,10 +24,11 @@ export default function Home() {
       <OurShip />
       <GlobalReach />
       <IndustriesWeServe />
-      <Team />
-      <Pricing />
-      <Testimonials />
+      {/* <Team /> */}
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
       {/* <Blog /> */}
+      <MissionAndVision />
       <Contact />
     </>
   );

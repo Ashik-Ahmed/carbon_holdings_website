@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
                     <Link href="#about" className="text-gray-600 hover:text-primary">About</Link>
                     <Link href="#services" className="text-gray-600 hover:text-primary">Services</Link>
-                    <Link href="#team" className="text-gray-600 hover:text-primary">Team</Link>
+                    <Link href="#ship" className="text-gray-600 hover:text-primary">Ship</Link>
                     <Link href="#pricing" className="text-gray-600 hover:text-primary">Pricing</Link>
                     <Link href="#blog" className="text-gray-600 hover:text-primary">Blog</Link>
                     <Link href="#contact" className="text-gray-600 hover:text-primary">Contact</Link>
