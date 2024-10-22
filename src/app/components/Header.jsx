@@ -21,7 +21,7 @@ const Header = () => {
                     <Link href="#ship" className="text-gray-600 hover:text-primary">Ship</Link>
                     <Link href="#mission" className="text-gray-600 hover:text-primary">Mission & Vision</Link>
                 </nav>
-                <button className="btn-primary hidden md:block">Get Started</button>
+                <Link href="#contact" className="btn-primary hidden md:block">Get Started</Link>
                 <button
                     className="md:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -37,7 +37,7 @@ const Header = () => {
                         <Link href="#services" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Services</Link>
                         <Link href="#ship" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Ship</Link>
                         <Link href="#mission" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-primary">Mission & Vision</Link>
-                        <button onClick={() => setIsMenuOpen(false)} className="btn-primary w-full">Get Started</button>
+                        <Link href="#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary w-full">Get Started</Link>
                     </nav>
                 </div>
             )}

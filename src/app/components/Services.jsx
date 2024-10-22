@@ -39,7 +39,7 @@ const Services = () => {
                 <p className="section-subtitle text-center">We offer a wide range of creative services to help your business grow</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <Card key={index} className="animate-fadeIn group">
+                        <Card key={index} className="animate-fadeIn group bg-white">
                             <CardHeader>
                                 <div className="w-12 h-12 bg-primary group-hover:bg-[#1e3056] fade-in-10 transition-all duration-300 rounded-full flex items-center justify-center mb-4">
                                     <service.icon className="text-white" size={24} />

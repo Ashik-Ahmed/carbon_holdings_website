@@ -20,10 +20,11 @@ const Footer = () => {
                     </div>
                     <div className="w-full md:w-1/4 mb-6 md:mb-0">
                         <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-                        <p className="text-gray-400">123 Business Street</p>
-                        <p className="text-gray-400">City, State 12345</p>
-                        <p className="text-gray-400">Phone: (123) 456-7890</p>
-                        <p className="text-gray-400">Email: info@Carbon Holdings.com</p>
+                        <p className="text-gray-400">BTMC Bhaban (7th Floor)</p>
+                        <p className="text-gray-400">7-9 Kawran Bazar</p>
+                        <p className="text-gray-400">Dhaka- 1217, Bangladesh</p>
+                        <p className="text-gray-400">Phone: +880-2-8189244, +880-2-8189321, +880-2-58155623</p>
+                        <p className="text-gray-400">Email: info@carbonhldings.com.bd</p>
                     </div>
                     <div className="w-full md:w-1/4">
                         <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
