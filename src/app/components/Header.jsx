@@ -12,7 +12,7 @@ const Header = () => {
         <header className="bg-white shadow-md fixed w-full z-10">
             <div className="container mx-auto px-4 py-1 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold text-primary">
-                    <Image src="/carbon_holdings_logo.png" height={50} width={180} alt='logo' />
+                    <Image src="/logo.png" height={50} width={180} alt='logo' />
                 </Link>
                 <nav className="hidden md:flex space-x-6">
                     <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
