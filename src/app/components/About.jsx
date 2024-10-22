@@ -8,7 +8,7 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0 animate-slideInLeft">
                         <Image
-                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+                            src="/logistics.avif"
                             alt="About Us"
                             width={600}
                             height={400}
@@ -42,7 +42,6 @@ const About = () => {
                                 <span>Commitment to Safety and Sustainability</span>
                             </li>
                         </ul>
-                        <button className="btn-primary">Learn More</button>
                     </div>
                 </div>
             </div>

@@ -10,9 +10,7 @@ const Hero = () => {
                         DREAM IN <span className="text-primary">CREATIVE</span> WAY
                     </h1>
                     <p className="text-xl mb-8">Leading global trade and logistics solutions</p>
-                    <Link href="#about" className="bg-primary text-white px-6 py-3 text-lg font-semibold hover:bg-orange-600 transition duration-300">
-                        Learn More
-                    </Link>
+                    <Link href="#about" className="btn-primary">Learn More</Link>
                 </div>
                 <div className="md:w-1/2 animate-slideInRight">
                     <Image

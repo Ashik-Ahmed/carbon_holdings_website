@@ -8,6 +8,9 @@ import Stats from "./components/Stats";
 import Team from "./components/Team";
 import Testimonials from './components/Testimonials';
 import Services from './components/Services';
+import OurShip from './components/OurShip';
+import GlobalReach from './components/GlobalReach';
+import IndustriesWeServe from '../../public/IndustriesWeServe';
 
 
 export default function Home() {
@@ -17,10 +20,13 @@ export default function Home() {
       <About />
       <Services />
       <Stats />
+      <OurShip />
+      <GlobalReach />
+      <IndustriesWeServe />
       <Team />
       <Pricing />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
     </>
   );
