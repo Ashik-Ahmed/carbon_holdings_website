@@ -30,7 +30,7 @@ const industries = [
 
 const IndustriesWeServe = () => {
     return (
-        <section id='#industriesweserve' className="py-16 bg-white">
+        <section id='industriesweserve' className="py-16 bg-white">
             <div className="container mx-auto px-4">
                 <h2 className="section-title text-center"><span className="text-primary">INDUSTRIES</span> WE SERVE</h2>
                 <p className="section-subtitle text-center">

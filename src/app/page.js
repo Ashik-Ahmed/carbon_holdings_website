@@ -10,8 +10,9 @@ import Testimonials from './components/Testimonials';
 import Services from './components/Services';
 import OurShip from './components/OurShip';
 import GlobalReach from './components/GlobalReach';
-import IndustriesWeServe from '../../public/IndustriesWeServe';
 import MissionAndVision from './components/MissionAndVision';
+import FenderService from './components/FenderService';
+import IndustriesWeServe from './components/IndustriesWeServe';
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <FenderService />
       <Services />
       <Stats />
       <OurShip />

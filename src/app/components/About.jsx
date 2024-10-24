@@ -23,7 +23,11 @@ const About = () => {
                         <ul className="space-y-2 mb-6">
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
-                                <span>Comprehensive Trade Solutions</span>
+                                <span>Comprehensive Fender Service</span>
+                            </li>
+                            <li className="flex items-center">
+                                <CheckCircle className="text-primary mr-2" />
+                                <span>Trade & Logistics Solutions</span>
                             </li>
                             <li className="flex items-center">
                                 <CheckCircle className="text-primary mr-2" />
