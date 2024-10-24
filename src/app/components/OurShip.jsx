@@ -8,7 +8,7 @@ export default function OurShip() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
                         <Image
-                            src="/mt_shah_ali.jpg"
+                            src="/Shah_Ali.jpg"
                             alt="MT Pride of Shah Ali"
                             width={800}
                             height={600}
