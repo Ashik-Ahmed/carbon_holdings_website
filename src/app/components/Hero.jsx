@@ -9,10 +9,10 @@ const Hero = () => {
                     {/* <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         PIONEER IN <span className="text-primary">FENDER SERVICES</span>
                     </h1> */}
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                        DREAM IN <span className="text-primary">CREATIVE</span> WAY
+                    <h1 className="text-xl md:text-2xl font-extrabold mb-4">
+                        COMPETENCE | <span className="text-primary">CAPABILITY </span>| COHERENCE
                     </h1>
-                    <p className="text-xl mb-8">Pioneer in <span className="font-bold border-b-4 border-[#ff5e14]">Fender Services</span></p>
+                    <p className="text-xl mb-8">Where Business Meets Precision and Performance</p>
                     <div className='pt-8'>
                         <Link href="#about" className="btn-primary">Learn More</Link>
                     </div>

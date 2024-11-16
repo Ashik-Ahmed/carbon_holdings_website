@@ -15,7 +15,7 @@ const Header = () => {
                 </Link>
                 <nav className="hidden md:flex space-x-6">
                     <Link href="/" className={`text-gray-600 hover:text-primary`}>Home</Link>
-                    <Link href="#about" className={`text-gray-600 hover:text-primary`}>About</Link>
+                    <Link href="/our-journey" className={`text-gray-600 hover:text-primary`}>Our Journey</Link>
                     <Link href="#fendersolution" className={`text-gray-600 hover:text-primary`}>Fender Solution</Link>
                     <Link href="#services" className={`text-gray-600 hover:text-primary`}>Services</Link>
                     <Link href="#ship" className={`text-gray-600 hover:text-primary`}>Ship</Link>
@@ -34,7 +34,7 @@ const Header = () => {
                 <div className="md:hidden bg-white">
                     <nav className="flex flex-col space-y-4 px-4 py-6">
                         <Link href="/" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Home</Link>
-                        <Link href="#about" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>About</Link>
+                        <Link href="/our-journey" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Our Journey</Link>
                         <Link href="#fendersolution" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Fender Solution</Link>
                         <Link href="#services" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Services</Link>
                         <Link href="#ship" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Ship</Link>
