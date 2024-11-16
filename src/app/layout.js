@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Carbon Holdings',
-  description: 'Leading global trade and logistics company',
+  description: 'Competence | Capability | Coherence',
 };
 
 export default function RootLayout({ children }) {
