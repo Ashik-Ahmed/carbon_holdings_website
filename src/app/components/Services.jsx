@@ -1,34 +1,40 @@
 
-import { Globe, TrendingUp, Ship, Package, ShieldCheck } from 'lucide-react';
+import { Globe, TrendingUp, Ship, Package, ShieldCheck, Sailboat, Warehouse } from 'lucide-react';
 import { Card, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 const services = [
     {
         title: 'Fender Service',
-        description: 'Providing specialized fendering solutions to ensure the safety and security of vessels.',
+        description: 'Specialized fendering solutions to ensure vessel safety and secure docking.',
         icon: ShieldCheck,
     },
     {
-        title: 'Trading & Indenting',
-        description: 'Facilitating seamless trading operations with expertise in domestic and international markets.',
+        title: 'Business Advisory',
+        description: 'Strategic insights and tailored solutions for operational growth and resilience.',
         icon: TrendingUp,
     },
     {
         title: 'Shipping & Logistics',
-        description: 'Comprehensive logistics solutions to ensure efficient and safe transportation of goods.',
-        icon: Ship,
+        description: 'Efficient goods transport with real-time tracking and adaptive support.',
+        icon: Warehouse,
     },
     {
-        title: 'Import & Export',
-        description: 'Connecting businesses to global markets by managing the complexities of cross-border trade.',
+        title: 'Optimization of the Discharge Operation',
+        description: 'Streamlined discharge processes to reduce turnaround times and enhance efficiency.',
         icon: Globe,
     },
     {
-        title: 'Supply Chain Management',
-        description: 'Optimizing the flow of goods and information to enhance efficiency and reduce costs.',
-        icon: Package,
+        title: 'Freight of Coaster Hire',
+        description: 'Flexible, cost-effective coastal freight transport with tailored scheduling.',
+        icon: Ship,
+    },
+    {
+        title: 'Tug Boat Hire',
+        description: 'Safe vessel maneuvering with flexible rentals and emergency tugboat support.',
+        icon: Sailboat,
     },
 ];
+
 
 
 const Services = () => {

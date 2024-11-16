@@ -25,12 +25,12 @@ export default function Home() {
       <Stats />
       <OurShip />
       <GlobalReach />
-      <IndustriesWeServe />
+      {/* <IndustriesWeServe /> */}
       {/* <Team /> */}
       {/* <Pricing /> */}
       {/* <Testimonials /> */}
       {/* <Blog /> */}
-      <MissionAndVision />
+      {/* <MissionAndVision /> */}
       <Contact />
     </>
   );

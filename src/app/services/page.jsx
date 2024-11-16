@@ -89,7 +89,7 @@ const Services = () => {
                     <div className="flex flex-col md:flex-row items-center md:space-x-8">
                         <div className="md:w-1/2">
                             <Image
-                                src="/services/fender-service.avif"
+                                src="/fender.webp"
                                 alt="Fender Service"
                                 width={600}
                                 height={400}

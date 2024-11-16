@@ -1,7 +1,12 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import TypewriterText from './TypewriterText';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
+
     return (
         <section id='hero' className="pt-20 pb-12 bg-gray-100">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -9,12 +14,13 @@ const Hero = () => {
                     {/* <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         PIONEER IN <span className="text-primary">FENDER SERVICES</span>
                     </h1> */}
-                    <h1 className="text-xl md:text-2xl font-extrabold mb-4">
+                    <h1 className="text-xl md:text-3xl font-extrabold mb-4">
                         COMPETENCE | <span className="text-primary">CAPABILITY </span>| COHERENCE
                     </h1>
-                    <p className="text-xl mb-8">Where Business Meets Precision and Performance</p>
+                    {/* <p className="text-xl mb-8"> <TypewriterText /> </p> */}
+                    <TypewriterText />
                     <div className='pt-8'>
-                        <Link href="#about" className="btn-primary">Learn More</Link>
+                        <Link href="#contact" className="btn-primary">Learn More</Link>
                     </div>
                 </div>
                 <div className="md:w-1/2 animate-slideInRight">
