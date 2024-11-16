@@ -19,12 +19,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
-      <FenderService />
+      {/* <About /> */}
+      {/* <FenderService /> */}
       <Services />
-      <Stats />
-      <OurShip />
-      <GlobalReach />
+      {/* <Stats /> */}
+      {/* <OurShip /> */}
+      {/* <GlobalReach /> */}
       {/* <IndustriesWeServe /> */}
       {/* <Team /> */}
       {/* <Pricing /> */}
