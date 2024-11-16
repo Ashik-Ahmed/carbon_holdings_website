@@ -14,7 +14,7 @@ const Hero = () => {
                     {/* <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         PIONEER IN <span className="text-primary">FENDER SERVICES</span>
                     </h1> */}
-                    <h1 className="text-xl md:text-3xl font-extrabold mb-4">
+                    <h1 className="text-xl md:text-2xl font-extrabold mb-4">
                         COMPETENCE | <span className="text-primary">CAPABILITY </span>| COHERENCE
                     </h1>
                     {/* <p className="text-xl mb-8"> <TypewriterText /> </p> */}
