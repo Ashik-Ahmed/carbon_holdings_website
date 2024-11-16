@@ -23,7 +23,7 @@ export default function Home() {
       {/* <FenderService /> */}
       <Services />
       {/* <Stats /> */}
-      {/* <OurShip /> */}
+      <OurShip />
       {/* <GlobalReach /> */}
       {/* <IndustriesWeServe /> */}
       {/* <Team /> */}

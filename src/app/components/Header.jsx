@@ -3,9 +3,12 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const currentPath = usePathname();
+    console.log(currentPath);
 
     return (
         <header className="bg-white fixed w-full z-10">
@@ -15,10 +18,10 @@ const Header = () => {
                 </Link>
                 <nav className="hidden md:flex space-x-6">
                     {/* <Link href="/" className={`text-gray-600 hover:text-primary`}>Home</Link> */}
-                    <Link href="/our-journey" className={`text-gray-600 hover:text-primary`}>Our Journey</Link>
+                    <Link href="/our-journey" className={`text-gray-600 hover:text-primary ${currentPath == '/our-journey' && 'border-b border-primary text-primary transition-all duration-500'}`}>Our Journey</Link>
                     {/* <Link href="#fendersolution" className={`text-gray-600 hover:text-primary`}>Fender Solution</Link> */}
-                    <Link href="/services" className={`text-gray-600 hover:text-primary`}>Services</Link>
-                    {/* <Link href="/#ship" className={`text-gray-600 hover:text-primary`}>Ship</Link> */}
+                    <Link href="/services" className={`text-gray-600 hover:text-primary ${currentPath == '/services' && 'border-b border-primary text-primary transition-all duration-500'}`}>Helping Business Everyday</Link>
+                    <Link href="/#ship" className={`text-gray-600 hover:text-primary`}>Our Vessel</Link>
                     {/* <Link href="#mission" className={`text-gray-600 hover:text-primary`}>Mission & Vision</Link> */}
 
                 </nav>
@@ -34,13 +37,13 @@ const Header = () => {
                 <div className="md:hidden bg-white">
                     <nav className="flex flex-col space-y-4 px-4 py-6">
                         {/* <Link href="/" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Home</Link> */}
-                        <Link href="/our-journey" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Our Journey</Link>
+                        <Link href="/our-journey" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary w-fit ${currentPath == '/our-journey' && 'border-b border-primary text-primary transition-all duration-500'}`}>Our Journey</Link>
                         {/* <Link href="#fendersolution" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Fender Solution</Link> */}
-                        <Link href="/services" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Services</Link>
-                        {/* <Link href="/#ship" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Ship</Link> */}
+                        <Link href="/services" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary w-fit ${currentPath == '/services' && 'border-b border-primary text-primary transition-all duration-500'}`}>Helping Business Everyday</Link>
+                        <Link href="/#ship" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary w-fit`}>Our Vessel</Link>
                         {/* <Link href="#mission" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Mission & Vision</Link> */}
 
-                        <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary w-full">Get Started</Link>
+                        <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary w-fit">Get Started</Link>
                     </nav>
                 </div>
             )}
