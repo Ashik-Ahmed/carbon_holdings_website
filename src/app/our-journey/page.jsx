@@ -4,13 +4,17 @@ import React from 'react';
 
 const OurJourney = () => {
     return (
-        <div className='container mx-auto py-16 px-8'>
-            <div className='mt-16 mb-4'>
-                <p className='text-primary'>{`Home > Our Journey`}</p>
+        <div className="container mx-auto py-16 px-8">
+            {/* Breadcrumb */}
+            <div className="mb-8">
+                <p className="text-primary">{`Home > Our Journey`}</p>
             </div>
 
-            <div className='mt-16 mb-4'>
-                <h1 className='text-primary text-4xl font-bold'>The Journey</h1>
+            {/* Page Header */}
+            <div className="mb-12">
+                <h1 className="text-2xl md:text-5xl font-bold text-primary">
+                    The Journey
+                </h1>
             </div>
             <div className='md:flex md:gap-8 items-center'>
                 <div className='md:w-1/2'>

@@ -22,7 +22,7 @@ const Services = () => {
             {/* Service Details Section */}
             <div className="space-y-16">
                 {/* Business Advisory Section */}
-                <div className="flex flex-col md:flex-row items-center md:space-x-8 bg-gray-100 p-8">
+                <div className="flex flex-col md:flex-row items-center md:space-x-8 bg-gray-100 p-2 md:p-8">
                     <div className="md:w-1/2">
                         <Image
                             src="/services/business-advisory.jpg"
@@ -33,7 +33,7 @@ const Services = () => {
                         />
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0">
-                        <h2 className="text-3xl font-bold text-primary">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                             Business Advisory
                         </h2>
                         <p className="mt-4 text-gray-600">
@@ -43,7 +43,7 @@ const Services = () => {
                 </div>
 
                 {/* Shipping & Logistics Section */}
-                <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse p-8">
+                <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse p-2 md:p-8">
                     <div className="md:w-1/2">
                         <Image
                             src="/services/shipping-logistics.jpg"
@@ -54,7 +54,7 @@ const Services = () => {
                         />
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0">
-                        <h2 className="text-3xl font-bold text-primary">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                             Shipping & Logistics
                         </h2>
                         <p className="mt-4 text-gray-600">
@@ -64,7 +64,7 @@ const Services = () => {
                 </div>
 
                 {/* Optimization of the Discharge Operation Section */}
-                <div className="flex flex-col md:flex-row items-center md:space-x-8 bg-gray-100 p-8">
+                <div className="flex flex-col md:flex-row items-center md:space-x-8 bg-gray-100 p-2 md:p-8">
                     <div className="md:w-1/2 bg-white">
                         <Image
                             src="/services/discharge-operation.avif"
@@ -75,7 +75,7 @@ const Services = () => {
                         />
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0">
-                        <h2 className="text-3xl font-bold text-primary">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                             Optimization of the Discharge Operation
                         </h2>
                         <p className="mt-4 text-gray-600">
@@ -86,7 +86,7 @@ const Services = () => {
 
                 {/* Additional Services Section */}
                 <div className="space-y-12">
-                    <div className="flex flex-col md:flex-row items-center md:space-x-8 p-8">
+                    <div className="flex flex-col md:flex-row items-center md:space-x-8 p-2 md:p-8">
                         <div className="md:w-1/2">
                             <Image
                                 src="/fender.webp"
@@ -97,7 +97,7 @@ const Services = () => {
                             />
                         </div>
                         <div className="md:w-1/2 mt-8 md:mt-0">
-                            <h2 className="text-3xl font-bold text-primary">
+                            <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                                 Fender Service
                             </h2>
                             <p className="mt-4 text-gray-600">
@@ -106,7 +106,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse bg-gray-100 p-8">
+                    <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse bg-gray-100 p-2 md:p-8">
                         <div className="md:w-1/2">
                             <Image
                                 src="/services/freight-of-coaster.jpg"
@@ -117,7 +117,7 @@ const Services = () => {
                             />
                         </div>
                         <div className="md:w-1/2 mt-8 md:mt-0">
-                            <h2 className="text-3xl font-bold text-primary">
+                            <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                                 Freight of Coaster Hire
                             </h2>
                             <p className="mt-4 text-gray-600">
@@ -126,7 +126,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row items-center md:space-x-8 p-8">
+                    <div className="flex flex-col md:flex-row items-center md:space-x-8 p-2 md:p-8">
                         <div className="md:w-1/2">
                             <Image
                                 src="/services/tug-boat.jpg"
@@ -137,7 +137,7 @@ const Services = () => {
                             />
                         </div>
                         <div className="md:w-1/2 mt-8 md:mt-0">
-                            <h2 className="text-3xl font-bold text-primary">
+                            <h2 className="text-2xl md:text-3xl font-bold text-gray-700">
                                 Tug Boat Hire
                             </h2>
                             <p className="mt-4 text-gray-600">
