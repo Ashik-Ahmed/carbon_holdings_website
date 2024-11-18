@@ -36,8 +36,8 @@ const Vessel = () => {
 
             {/* Page Header */}
             <div className="mb-12">
-                <h1 className="text-2xl md:text-5xl font-bold text-primary">
-                    Our Vessel
+                <h1 className="text-2xl md:text-5xl font-bold">
+                    Our <span className="text-primary">Vessel</span>
                 </h1>
                 <p className="mt-4 text-gray-600">
                     The MT Pride of Shah Ali (Registration No. C-1790) is a proud asset dedicated to transporting refined oil on behalf of the Bangladesh Petroleum Corporation. Constructed in 2012, this vessel has navigated the waters of Bangladesh, making vital journeys to key depots in Godnail, Fotulla, Khulna, Chandpur, Jhalokathi, Barisal, Baghabari, and Bhoirob. Each voyage reflects our commitment to reliable service and the seamless delivery of essential resources.

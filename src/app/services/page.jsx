@@ -11,8 +11,8 @@ const Services = () => {
 
             {/* Page Header */}
             <div className="mb-12">
-                <h1 className="text-2xl md:text-5xl font-bold text-primary">
-                    Helping Businesses Everyday
+                <h1 className="text-2xl md:text-5xl font-bold">
+                    <span className="text-primary">Helping Businesses</span> Everyday
                 </h1>
                 <p className="mt-4 text-gray-600">
                     Driving seamless operations through advanced process development and a committed team, we empower businesses to thrive daily with efficiency and precision.

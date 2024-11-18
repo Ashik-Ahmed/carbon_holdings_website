@@ -12,8 +12,8 @@ const OurJourney = () => {
 
             {/* Page Header */}
             <div className="mb-12">
-                <h1 className="text-2xl md:text-5xl font-bold text-primary">
-                    The Journey
+                <h1 className="text-2xl md:text-5xl font-bold">
+                    The <span className="text-primary">Journey</span>
                 </h1>
             </div>
             <div className='md:flex md:gap-8 items-center'>
