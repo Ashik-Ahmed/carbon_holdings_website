@@ -25,7 +25,7 @@ const Header = () => {
                     {/* <Link href="#mission" className={`text-gray-600 hover:text-primary`}>Mission & Vision</Link> */}
 
                 </nav>
-                <Link href="/#contact" className="btn-primary hidden md:block">Get Started</Link>
+                <Link href="/#contact" className="btn-primary hidden md:block">Let's Connect</Link>
                 <button
                     className="md:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -43,7 +43,7 @@ const Header = () => {
                         <Link href="/our-vessel" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary w-fit ${currentPath == '/our-vessel' && 'border-b border-primary text-primary transition-all duration-500'}`}>Our Vessel</Link>
                         {/* <Link href="#mission" onClick={() => setIsMenuOpen(false)} className={`text-gray-600 hover:text-primary`}>Mission & Vision</Link> */}
 
-                        <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary w-fit">Get Started</Link>
+                        <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary w-fit">Let's Connect</Link>
                     </nav>
                 </div>
             )}
