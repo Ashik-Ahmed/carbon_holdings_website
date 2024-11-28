@@ -54,11 +54,11 @@ const Vessel = () => {
                     <div className="mx-auto max-w-7xl bg-white">
                         <div className="grid gap-8 md:grid-cols-2">
                             {/* Image Section */}
-                            <div className="relative min-h-[300px] overflow-hidden ">
+                            <div className="relative min-h-[300px] overflow-hidden">
                                 <Image
-                                    src="/mt_shah_ali.jpg"
+                                    src="/Shah_Ali.jpg"
                                     alt="Oil Tanker Ship"
-                                    className="object-cover"
+                                    className="object-contain"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                     priority

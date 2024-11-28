@@ -46,7 +46,7 @@ const Services = () => {
                 <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 md:space-x-reverse p-2 md:p-8">
                     <div className="md:w-1/2">
                         <Image
-                            src="/services/shipping-logistics.jpg"
+                            src="/services/shipping-logistics.svg"
                             alt="Shipping & Logistics"
                             width={600}
                             height={400}
