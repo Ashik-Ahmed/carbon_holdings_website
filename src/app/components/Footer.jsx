@@ -53,6 +53,10 @@ const Footer = () => {
                 <div className="mt-8 border-t border-gray-700 pt-8 text-center">
                     <p className="text-gray-400">&copy; {new Date().getFullYear()} Carbon Holdings. All rights reserved.</p>
                 </div>
+
+                <div className='w-full py-2'>
+                    <p className='text-center text-xs font-light italic'>Developed by <Link href="https://lamdatelecombd.com/" target="_blank" className='underline'>Lamda Telecom</Link></p>
+                </div>
             </div>
         </footer>
     );
