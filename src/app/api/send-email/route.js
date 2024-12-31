@@ -19,7 +19,7 @@ export async function POST(req) {
         // Email options
         const mailOptions = {
             from: `"${name}" <${email}>`, // Sender address
-            to: 'info@chl.com.bd', // Recipient email
+            to: process.env.AUTH_EMAIL, // Recipient email
             subject: subject, // Subject line
             text: message, // Plain text body
             html: `<p>${message}</p>` // HTML body

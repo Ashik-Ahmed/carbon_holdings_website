@@ -50,7 +50,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
-        // sendEmail(formData);
+        sendEmail(formData);
         setFormData({ name: '', email: '', subject: '', message: '' });
     };
 
