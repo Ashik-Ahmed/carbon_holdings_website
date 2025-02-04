@@ -4,55 +4,60 @@ import { useState } from 'react';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 
-
-async function sendEmail(formData) {
-    try {
-        const response = await fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        if (data.success) {
-            console.log('Email sent successfully!');
-            window.alert('We have received your message!');
-        } else {
-            console.error('Failed to send email:', data.message);
-            window.alert('Failed to send email. Please try again.');
-        }
-    } catch (error) {
-        console.error('Error:', error.message);
-        window.alert('An error occurred. Please try again.');
-    }
-}
-
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    const [formStatus, setFormStatus] = useState(null)
+    const [emailLoading, setEmailLoading] = useState(false)
+    const [formData, setFormData] = useState({  // Initialize state for formData
         name: '',
         email: '',
         subject: '',
-        message: '',
-    });
+        message: ''
+    })
+
+    async function sendEmail(formData) {
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            // console.log('data:', data);
+            return data;
+
+        } catch (error) {
+            // console.error('Error:', error.message);
+            return { error: error.message };
+        }
+    }
+
+    const handleSubmit = async (e) => {
+        setFormStatus(null)
+        setEmailLoading(true)
+        e.preventDefault()
+
+        const email = await sendEmail(formData)
+
+        if (email.success) {
+            setFormStatus('success')
+            setFormData({ name: '', email: '', subject: '', message: '' }) // Reset form state
+        } else {
+            setFormStatus('error')
+        }
+        setEmailLoading(false)
+    }
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value,
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form submitted:', formData);
-        sendEmail(formData);
-        setFormData({ name: '', email: '', subject: '', message: '' });
-    };
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
 
     return (
         <section id="contact" className="py-20 bg-gray-100">
@@ -95,8 +100,19 @@ const Contact = () => {
                             required
                             rows={6}
                         />
-                        <button type="submit" className="btn-primary w-full">Send Message</button>
+                        <button type="submit" className={`btn-primary w-full ${emailLoading ? 'opacity-50 cursor-not-allowed' : ''}`}>Send Message</button>
                     </form>
+                    {formStatus === 'success' &&
+                        (
+                            <p className="text-primary mt-4">We have received your message. We will get back to you soon!</p>
+                        )
+                    }
+                    {
+                        formStatus === 'error' &&
+                        (
+                            <p className="text-white bg-red-500 mt-4">Something went wrong. Please try again later.</p>
+                        )
+                    }
                 </div>
             </div>
         </section>
